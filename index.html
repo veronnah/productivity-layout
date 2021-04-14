@@ -8,11 +8,13 @@
     <title>Productivity</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
+        <div class="wrapper">
             <div class="logo-circle"></div>
             <ul class="header-nav">
                 <li><a href="#!">Home</a></li>
@@ -29,9 +31,75 @@
                 <li><a href="#!"><img src="./img/medium.svg" alt=""></a></li>
             </ul>
             <button class="header-btn">Get started</button>
-        
+        </div>
     </header>
-
+    <section class="home-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-text">
+                        <div class="slide-text__before-heading">Plan your life</div>
+                        <div class="slide-text__main-heading">
+                            Increase your <span>productivity</span>
+                        </div>
+                        <div class="slide-text__subtitle">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                            insolens gubergren similique est cu. Et vel modus congue vituperata.
+                        </div>
+                    </div>
+                    <button class="swiper-autoplay-btn">
+                        <img src="./img/play-btn.svg" alt="">
+                    </button>
+                    <div class="slides-chart">
+                        <img class="slides-chart__chart" src="./img/chart1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/slide1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-text">
+                        <div class="slide-text__before-heading">Plan your life</div>
+                        <div class="slide-text__main-heading">
+                            Increase your <span>productivity</span>
+                        </div>
+                        <div class="slide-text__subtitle">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                            insolens gubergren similique est cu. Et vel modus congue vituperata.
+                        </div>
+                    </div>
+                    <div class="slides-chart">
+                        <img class="slides-chart__chart" src="./img/chart1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/slide1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-text">
+                        <div class="slide-text__before-heading">Plan your life</div>
+                        <div class="slide-text__main-heading">
+                            Increase your <span>productivity</span>
+                        </div>
+                        <div class="slide-text__subtitle">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                            insolens gubergren similique est cu. Et vel modus congue vituperata.
+                        </div>
+                    </div>
+                    <div class="slides-chart">
+                        <img class="slides-chart__chart" src="./img/chart1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/slide1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
