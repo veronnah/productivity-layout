@@ -243,3 +243,38 @@ header .header-btn:hover {
     bottom: 0;
 
 }
+
+
+@media(max-width: 1177px) {
+    .wrapper {
+        padding: 12px 20px;
+    }
+
+    header ul li {
+        margin-right: 20px;
+    }
+
+    .swiper-autoplay-btn {
+        top: 72%;
+    }
+}
+
+@media(max-width: 840px) {
+
+    .header-nav,
+    .socials-header,
+    .header-btn {
+        display: none;
+    }
+}
+
+@media(max-width: 605px) {
+    .slide-text {
+        top: 14%;
+    }
+
+    .swiper-autoplay-btn {
+        top: 65%;
+    }
+
+}
