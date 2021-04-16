@@ -244,6 +244,60 @@ header .header-btn:hover {
 
 }
 
+.marquee-text div {
+    width: 100%;
+    animation: marquee-text 5s linear infinite;
+}
+
+.marquee-infinite {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.marquee-infinite div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 10s linear infinite;
+}
+
+
+
+.marquee-infinite span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.marquee-infinite img {
+    padding: 38px;
+    padding: 48px;
+    width: 140px;
+}
+
+.marquee-infinite:hover div {
+    animation-play-state: paused;
+}
+
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 
 @media(max-width: 1177px) {
     .wrapper {
