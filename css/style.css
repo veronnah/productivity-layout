@@ -316,7 +316,8 @@ header .header-btn:hover {
 
 .plan__manage-text {
     width: 50%;
-    padding-left: 24em;
+    padding-left: 20em;
+    margin-right: 30px;
 }
 
 .plan__manage-text_bheading {
@@ -349,7 +350,8 @@ header .header-btn:hover {
     margin-bottom: 47px;
 }
 
-.plan__manage-btn-video, .plan__manage-btn-features {
+.plan__manage-btn-video,
+.plan__manage-btn-features {
     width: 130px;
     border: none;
     padding: 10px;
@@ -359,12 +361,15 @@ header .header-btn:hover {
     background-color: #4C85FF;
     border-radius: 2px;
 }
+
 .plan__manage-btn-video {
     background-color: #4C85FF;
 }
-.plan__manage-btn-video img{
+
+.plan__manage-btn-video img {
     margin-left: 5px;
 }
+
 .plan__manage-btn-features {
     background-color: #F5F8FF;
     border: 1px solid #D1D1E4;
@@ -381,7 +386,19 @@ header .header-btn:hover {
     width: 100%;
 }
 
+@media(max-width: 1440px) {
+    .plan__manage-text {
+        padding-left: 6em;
+    }
 
+    .plan__manage {
+        padding-right: 0;
+    }
+
+    .plan__manage-pic {
+        justify-content: flex-end;
+    }
+}
 
 @media(max-width: 1177px) {
     .wrapper {
@@ -395,7 +412,34 @@ header .header-btn:hover {
     .swiper-autoplay-btn {
         top: 72%;
     }
+
+    .plan__manage-text {
+        padding-left: 2em;
+    }
+
+    .plan__manage-pic img {
+        max-width: 600px;
+    }
 }
+
+@media(max-width: 1000px) {
+    .plan__manage-text {
+        padding-left: 0;
+    }
+
+    .plan__manage-pic img {
+        max-width: 500px;
+    }
+
+    .plan__manage-text {
+        margin-right: 0;
+    }
+
+    .plan__manage {
+        padding: 0 20px;
+    }
+}
+
 
 @media(max-width: 840px) {
 
@@ -406,7 +450,47 @@ header .header-btn:hover {
     }
 }
 
+@media(max-width: 800px) {
+    .plan__manage-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plan__manage-pic {
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .plan__manage-text {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .plan__manage-btn-video {
+        margin-bottom: 12px;
+    }
+
+    .plan__manage-text_subtitle {
+        max-width: unset;
+    }
+    .plan__manage-pic img{
+        width: 100%;
+    }
+}
+
 @media(max-width: 605px) {
+    .slide-text {
+        top: 14%;
+    }
+
+    .swiper-autoplay-btn {
+        top: 65%;
+    }
+
+}
+
+@media(max-width: 550px) {
     .slide-text {
         top: 14%;
     }
