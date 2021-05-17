@@ -78,6 +78,10 @@
     /* Legacy iOS */
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     height: 100%;
@@ -260,8 +264,6 @@ header .header-btn:hover {
     animation: marquee-infinite 10s linear infinite;
 }
 
-
-
 .marquee-infinite span {
     width: 100%;
     display: flex;
@@ -271,7 +273,6 @@ header .header-btn:hover {
 .marquee-infinite img {
     padding: 38px;
     padding: 48px;
-    width: 140px;
 }
 
 .marquee-infinite:hover div {
@@ -364,6 +365,11 @@ header .header-btn:hover {
 
 .plan__manage-btn-video {
     background-color: #4C85FF;
+    transition: .3s all;
+}
+
+.plan__manage-btn-video:hover {
+    background-color: #4375e0;
 }
 
 .plan__manage-btn-video img {
@@ -384,6 +390,217 @@ header .header-btn:hover {
     text-align: center;
     height: 100%;
     width: 100%;
+}
+
+.about {
+    background-color: #fff;
+    background-image: url('../img/clouds.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 170px 0;
+}
+
+.about__title {
+    margin-bottom: 95px;
+}
+
+.about__title h3 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D4F9F;
+    margin-bottom: 20px;
+}
+
+.about__title h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3D4F9F;
+}
+
+.about__events {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    gap: 70px;
+    margin: 0 15px;
+}
+
+.about__events a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    max-width: 140px;
+    text-decoration: none;
+}
+
+.about__events a h5 {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #4074F8;
+    margin-bottom: 25px;
+}
+
+.about__events a p {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: #ADB3CB;
+}
+
+.about__events .icon__img-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 69px;
+    height: 69px;
+    background-color: #F1F5FF;
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.about__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.about__buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 43px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    transition: .3s all;
+    position: relative;
+}
+
+.about__buttons span {
+    margin: 0px 48px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    color: #ADB3CB;
+}
+
+.about__buttons .readmore {
+    background-color: #FFD7D7;
+    color: #D43F3F;
+}
+
+.about__buttons .readmore::after {
+    content: '';
+    position: absolute;
+    left: 10em;
+    width: 15px;
+    height: 1px;
+    background-color: #DAE4FE;
+}
+
+.about__buttons .readmore:hover {
+    background-color: rgb(255, 236, 236);
+}
+
+.about__buttons .getstarted {
+    background-color: #D2E1FF;
+    color: #3A79FF;
+}
+
+.about__buttons .getstarted::before {
+    content: '';
+    position: absolute;
+    right: 10em;
+    width: 15px;
+    height: 1px;
+    background-color: #DAE4FE;
+}
+
+.about__buttons .getstarted:hover {
+    background-color: #eaf1ff;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.progress .progress__block {
+    padding: 70px 90px;
+}
+
+.progress img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+}
+
+.progress__customers {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    width: 100%;
+    text-align: right;
+}
+
+.progress__users {
+    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+    width: 100%;
+}
+
+.users-num {
+    font-size: 48px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    color: #5E80FF;
+}
+
+.customers-num {
+    font-size: 48px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.progress__customers-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progress__customers-text p {
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.progress__users-text p {
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #5E80FF;
 }
 
 @media(max-width: 1440px) {
@@ -474,8 +691,17 @@ header .header-btn:hover {
     .plan__manage-text_subtitle {
         max-width: unset;
     }
-    .plan__manage-pic img{
+
+    .plan__manage-pic img {
         width: 100%;
+    }
+
+    .about__events {
+        gap: 30px;
+    }
+
+    .progress .progress__block {
+        padding: 50px 48px;
     }
 }
 
@@ -488,6 +714,10 @@ header .header-btn:hover {
         top: 65%;
     }
 
+    .progress .progress__block {
+        padding: 40px 30px;
+    }
+
 }
 
 @media(max-width: 550px) {
@@ -497,6 +727,54 @@ header .header-btn:hover {
 
     .swiper-autoplay-btn {
         top: 65%;
+    }
+
+    .about__events {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+}
+
+@media(max-width: 420px) {
+
+    .customers-num,
+    .users-num {
+        font-size: 40px;
+    }
+
+    .progress__customers-text p,
+    .progress__users-text p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 375px) {
+    .about__buttons {
+        flex-direction: column;
+    }
+
+    .about__buttons .getstarted::before,
+    .about__buttons .readmore::after {
+        content: none;
+    }
+
+    .about__buttons span {
+        margin: 10px 0;
+    }
+
+    .about__buttons .readmore {
+        margin-left: -8em;
+    }
+
+    .about__buttons .getstarted {
+        margin-right: -8em;
+    }
+
+    .progress .progress__block {
+        padding: 30px 18px;
     }
 
 }
