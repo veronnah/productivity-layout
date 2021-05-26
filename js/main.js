@@ -60,27 +60,35 @@ const quotesSlider = new Swiper('.quotes__slider-container', {
   },
 
   breakpoints: {
-    // when window width is >= 320px
     320: {
-     
       spaceBetween: 20
     },
-    // when window width is >= 480px
     480: {
-      
       spaceBetween: 30
     },
-    // when window width is >= 640px
     1000: {
-    
       spaceBetween: 80
     }
   }
 });
 
-
 function hideTitle() {
   let title = document.querySelector('.customers__quotes-title');
 
   title.classList.toggle('disabledTitle');
+}
+
+let acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
