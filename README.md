@@ -1,2 +1,2 @@
 # productivity-layout
-https://veronnah.github.io/productivity-page/
+https://veronnah.github.io/productivity-layout/
